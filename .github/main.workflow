@@ -1,4 +1,4 @@
-workflow "Convert and Publish" {
+workflow "Publish" {
   on = "push"
   resolves = ["Deploy", "Convert"]
 }
@@ -31,7 +31,7 @@ action "Deploy" {
   ]
   uses = "maxheld83/rsync@v0.1.1"
   args = [
-    "$GITHUB_WORKSPACE/public/",
+    "$GITHUB_WORKSPACE/public/", 
     "pfs400wm@karli.rrze.uni-erlangen.de:/proj/websource/docs/FAU/fakultaet/phil/www.datascience.phil.fau.de/websource/backup"
   ]
   env = {
@@ -40,7 +40,7 @@ action "Deploy" {
     HOST_FINGERPRINT = "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFHJVSekYKuF5pMKyHe1jS9mUkXMWoqNQe0TTs2sY1OQj379e6eqVSqGZe+9dKWzL5MRFpIiySRKgvxuHhaPQU4="
   }
   secrets = [
-    "SSH_PRIVATE_KEY",
+    "SSH_PRIVATE_KEY", 
     "SSH_PUBLIC_KEY"
   ]
 }
