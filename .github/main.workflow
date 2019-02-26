@@ -11,28 +11,28 @@ action "Convert" {
   args = [
     "--standalone",
     "--output=public/index.html",
-    "README.md",
+    "README.md"
   ]
 }
 
 action "Filter master" {
   needs = [
-    "Convert",
+    "Convert"
   ]
   uses = "actions/bin/filter@a9036ccda9df39c6ca7e1057bc4ef93709adca5f"
   args = [
-    "branch master",
+    "branch master"
   ]
 }
 
 action "Deploy" {
   needs = [
-    "Filter master",
+    "Filter master"
   ]
   uses = "maxheld83/rsync@v0.1.1"
   args = [
     "$GITHUB_WORKSPACE/public/",
-    "pfs400wm@karli.rrze.uni-erlangen.de:/proj/websource/docs/FAU/fakultaet/phil/www.datascience.phil.fau.de/websource/backup",
+    "pfs400wm@karli.rrze.uni-erlangen.de:/proj/websource/docs/FAU/fakultaet/phil/www.datascience.phil.fau.de/websource/backup"
   ]
   env = {
     HOST_NAME = "karli.rrze.uni-erlangen.de"
@@ -41,7 +41,6 @@ action "Deploy" {
   }
   secrets = [
     "SSH_PRIVATE_KEY",
-    "SSH_PUBLIC_KEY",
-    "GITHUB_TOKEN",
+    "SSH_PUBLIC_KEY"
   ]
 }
