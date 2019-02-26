@@ -61,6 +61,7 @@ To restore a new or empty harddrive from a Time Machine backup, contact the [FAU
 To be able to run Time Machine backups on FAU servers, your team or organization needs to buy "[Basic Linux Storage NFS](https://www.rrze.fau.de/hard-software/betriebssysteme/linux/#collapse_3)" from RRZE.
 This currently costs €10/500GB.
 
+To change the storage quota, email an updated form to `rrze-mac@fau.de`.
+
 SOZTAG's current quota is 1TB.
 The order forms can be found on `FAUbox/SOZTAG/IT/RRZE Dienstleistungen/Storage`.
-To change the storage quota, email an updated form to `rrze-mac@fau.de`.
