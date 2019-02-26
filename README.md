@@ -17,7 +17,7 @@ Because ... backups.
 ## Limitations
 
 This only works when you're physically connected to the FAU.
-*Do not try to run backups via a VPN connection!*.
+*Do not try to run backups via a VPN connection!*
 You should also use an ethernet connection if at all possible to avoid overloading the local WiFi.
 
 
