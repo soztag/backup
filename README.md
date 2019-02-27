@@ -62,6 +62,7 @@ To be able to run Time Machine backups on FAU servers, your team or organization
 This currently costs €10/500GB.
 
 To change the storage quota, email an updated form to `rrze-mac@fau.de`.
+In addition to the total quota, FAUMac must also know the usernames (IdM) and quote *per* user.
 
-SOZTAG's current quota is 1TB.
+SOZTAG's current quota is 1TB, 200GB/person.
 The order forms can be found on `FAUbox/SOZTAG/IT/RRZE Dienstleistungen/Storage`.
