@@ -1,6 +1,8 @@
 # Setting up macOS *Time Machine* Backups on FAU Servers
 
-[![Actions Status](https://wdp9fww0r9.execute-api.us-west-2.amazonaws.com/production/badge/soztag/backup)](https://github.com/soztag/backup/actions)
+<!-- badges: start -->
+[![Actions Status](https://github.com/soztag/backup/workflows/Publishing/badge.svg)](https://github.com/soztag/backup/actions)
+<!-- badges: end -->
 
 **This documentation lives on GitHub.
 To raise issues or make changes, go to [`https://github.com/soztag/backup`](https://github.com/soztag/backup)**.
